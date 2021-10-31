@@ -1,13 +1,14 @@
 import { red } from "@mui/material/colors";
-import { createTheme } from "@mui/material/styles";
+import {createTheme, IThemeOptions} from "@mui/material/styles";
+import {ThemeOptions} from "@mui/material";
 
 declare module '@mui/material/styles' {
-  interface ThemeOptions {
-    [key: string]: any; 
+  export interface IThemeOptions extends ThemeOptions {
+    [key: string]: any;
   }
 }
 
-const themeSettings  = {
+const themeSettings = {
   typography: {
     fontFamily: [
       'system-ui',
@@ -18,7 +19,6 @@ const themeSettings  = {
       'Ubuntu',
       'Helvetica Neue',
       'sans-serif',
-
     ]
   },
   palette: {
@@ -101,8 +101,8 @@ const themeSettings  = {
           },
         },
       },
-    },  
+    },
   }
 }
 
-export const theme = createTheme({ themeSettings }) 
+export const theme = createTheme({ themeSettings } as IThemeOptions)
