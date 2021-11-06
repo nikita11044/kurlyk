@@ -74,6 +74,11 @@ const components = {
         fontWeight: 800,
         marginTop: 20,
         marginBottom: 45,
+      },
+      h6: {
+        fontWeight: 700,
+        fontSize: 20,
+        marginLeft: 15,
       }
     }
   },

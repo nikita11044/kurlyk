@@ -1,12 +1,12 @@
 import {Button, FormControl, FormGroup, TextField, Typography} from "@mui/material";
-import HeronIcon from "../components/icons/HeronIcon";
+import HeronIcon from "../../components/icons/HeronIcon";
 import EmojiPeopleRoundedIcon from '@mui/icons-material/EmojiPeopleRounded';
 import BedRoundedIcon from '@mui/icons-material/BedRounded';
 import EmojiFoodBeverageIcon from '@mui/icons-material/EmojiFoodBeverage';
 import React, {useState} from "react";
 import styles from "./SignIn.module.scss"
-import {ModalBlock} from "../components/Dialog/ModalBlock";
-import {theme} from "../theme";
+import {ModalBlock} from "../../components/ModalBlock";
+import {theme} from "../../theme";
 
 export const SignIn: React.FC = (): React.ReactElement => {
 
