@@ -1,0 +1,24 @@
+.sideBarList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sideBarItem {
+  display: flex;
+  align-items: center;
+  div {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    left: -10;
+    padding: 0 25px 0 15px;
+    border-radius: 30px;
+    height: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(29, 161, 242, 0.1);
+    }
+  }
+}
