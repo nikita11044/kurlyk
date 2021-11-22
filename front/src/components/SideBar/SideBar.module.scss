@@ -17,6 +17,11 @@
     height: 50px;
     margin-bottom: 10px;
     cursor: pointer;
+  }
+}
+
+.sideBarItem:not(:first-of-type) {
+  div {
     &:hover {
       background-color: rgba(29, 161, 242, 0.1);
     }

@@ -4,6 +4,7 @@ import {Container, Grid, InputBase, Paper, Typography} from "@mui/material";
 import {styled} from "@mui/styles";
 import {Kurlyk} from "../../components/Kurlyk";
 import {SideBar} from "../../components/SideBar/SideBar";
+import {AddKurlykForm} from "../../components/AddKurlykForm/AddKurlykForm";
 
 const KurlykPaper = styled(Paper)({
     height: '100%',
@@ -30,6 +31,7 @@ export const Home: React.FC = (): React.ReactElement => {
                                 Главная
                             </Typography>
                         </Paper>
+                        <AddKurlykForm/>
                         <Kurlyk
                             text={'Ну, «Три семерки» выпил, блядь… Ну, бутылку… С одной дурой… Ну, а потом\n' +
                             '                    поебалися! Быстро так, мы десять минут всего ебалися-то… А у меня потом, блядь,\n' +
