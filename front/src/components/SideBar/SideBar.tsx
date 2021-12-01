@@ -9,6 +9,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import CreateIcon from '@mui/icons-material/Create';
 import { styled } from "@mui/styles";
 import { ThemeType } from "../../types";
 
@@ -28,8 +29,8 @@ export const SideBar: React.FC = (): React.ReactElement => {
         <div>
           <IconButton style={{ margin: "10px 0" }} aria-label="logo">
             <HeronIcon
-              width={38}
-              height={38}
+              width={30}
+              height={30}
               fill={theme.palette.primary.main}
             />
           </IconButton>
@@ -38,7 +39,7 @@ export const SideBar: React.FC = (): React.ReactElement => {
       <li className={styles.sideBarItem}>
         <div>
           <IconButton aria-label="tag" color="primary">
-            <TagIcon style={{ fontSize: 32 }} />
+            <TagIcon style={{ fontSize: 25 }} />
           </IconButton>
           {hidden ? null : <Typography variant="h6">Поиск</Typography>}
         </div>
@@ -46,7 +47,7 @@ export const SideBar: React.FC = (): React.ReactElement => {
       <li className={styles.sideBarItem}>
         <div>
           <IconButton aria-label="notifications" color="primary">
-            <NotificationsNoneIcon style={{ fontSize: 32 }} />
+            <NotificationsNoneIcon style={{ fontSize: 25 }} />
           </IconButton>
           {hidden ? null : <Typography variant="h6">Уведомления</Typography>}
         </div>
@@ -54,7 +55,7 @@ export const SideBar: React.FC = (): React.ReactElement => {
       <li className={styles.sideBarItem}>
         <div>
           <IconButton aria-label="messages" color="primary">
-            <MailOutlineIcon style={{ fontSize: 32 }} />
+            <MailOutlineIcon style={{ fontSize: 25 }} />
           </IconButton>
           {hidden ? null : <Typography variant="h6">Сообщения</Typography>}
         </div>
@@ -62,7 +63,7 @@ export const SideBar: React.FC = (): React.ReactElement => {
       <li className={styles.sideBarItem}>
         <div>
           <IconButton aria-label="favourite" color="primary">
-            <BookmarkBorderIcon style={{ fontSize: 32 }} />
+            <BookmarkBorderIcon style={{ fontSize: 25 }} />
           </IconButton>
           {hidden ? null : <Typography variant="h6">Закладки</Typography>}
         </div>
@@ -70,7 +71,7 @@ export const SideBar: React.FC = (): React.ReactElement => {
       <li className={styles.sideBarItem}>
         <div>
           <IconButton aria-label="list" color="primary">
-            <ListAltIcon style={{ fontSize: 32 }} />
+            <ListAltIcon style={{ fontSize: 25 }} />
           </IconButton>
           {hidden ? null : <Typography variant="h6">Список</Typography>}
         </div>
@@ -78,13 +79,13 @@ export const SideBar: React.FC = (): React.ReactElement => {
       <li className={styles.sideBarItem}>
         <div>
           <IconButton aria-label="profile" color="primary">
-            <PersonOutlineIcon style={{ fontSize: 32 }} />
+            <PersonOutlineIcon style={{ fontSize: 25 }} />
           </IconButton>
           {hidden ? null : <Typography variant="h6">Профиль</Typography>}
         </div>
       </li>
       <KurlykButton variant="contained" color="primary" fullWidth>
-        Курлыкнуть
+          {hidden ? <CreateIcon style={{ fontSize: 25 }} /> : 'Курлыкнуть'}
       </KurlykButton>
     </ul>
   );

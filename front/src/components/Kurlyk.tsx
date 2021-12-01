@@ -35,12 +35,12 @@ export const Kurlyk: React.FC<KurlykProps> = ({
         <Grid item xs={1}>
           <Avatar alt="Аватар пользователя" src={user.avatarUrl} />
         </Grid>
-        <Grid className="kurlykText" item xs={11}>
-          <Typography>
+        <Grid item xs={11}>
+          <Typography style={{ paddingLeft: 12 }}>
             <b>{user.fullName}</b>
             <span style={{ color: "#9e9e9e" }}>@{user.userName}</span>
           </Typography>
-          <Typography variant="body1" gutterBottom>
+          <Typography variant="body1" gutterBottom style={{ paddingLeft: 12 }}>
             {text}
           </Typography>
           <Grid container spacing={1}>

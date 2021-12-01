@@ -1,1 +1,14 @@
+.formWrapper {
+  padding: 3%;
+}
 
+.formBody {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.formFooter {
+  display: flex;
+  justify-content: space-around;
+}
