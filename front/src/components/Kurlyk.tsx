@@ -18,11 +18,6 @@ const KurlykContentWrapper = styled(Paper)(({theme}) => ({
   "&:hover": {
     backgroundColor: "rgb(245, 248, 250)",
   },
-//   [theme.breakpoints.down('lg')]: {
-//     ".kurlykText": {
-//       paddingLeft: "35px",
-//     },
-//   },
 }));
 
 export const Kurlyk: React.FC<KurlykProps> = ({

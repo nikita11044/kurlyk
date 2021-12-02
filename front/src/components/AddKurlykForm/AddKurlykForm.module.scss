@@ -8,7 +8,41 @@
   margin-bottom: 20px;
 }
 
+.formTextArea {
+  width: 100%;
+  border: 0;
+  font-size: 20px;
+  outline: none;
+  font-family: inherit;
+  resize: none;
+}
+
 .formFooter {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formFooterLeft {
+  display: flex;
+  align-items: center;
+  width: 15%;
+  justify-content: space-between;
+}
+
+.formFooterRight {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.circularProgress {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  & .MuiCircularProgress-root {
+    position: absolute;
+  }
 }
