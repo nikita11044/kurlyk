@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import ImageOutlinedIcon from '@mui/icons-material/ImageOutlined';
+import EmojiEmotionsOutlinedIcon from '@mui/icons-material/EmojiEmotionsOutlined';
 import {Avatar, Box, Button, CircularProgress, IconButton, Paper, TextareaAutosize, Typography} from "@mui/material";
 import styles from './AddKurlykForm.module.scss'
 
@@ -28,10 +29,10 @@ export const AddKurlykForm: React.FC = (): React.ReactElement => {
         <div className={styles.formFooter}>
             <div className={styles.formFooterLeft}>
                 <IconButton>
-                    <ImageOutlinedIcon/>
+                    <ImageOutlinedIcon color={'primary'}/>
                 </IconButton>
                 <IconButton>
-                    <ImageOutlinedIcon/>
+                    <EmojiEmotionsOutlinedIcon color={'primary'}/>
                 </IconButton>
             </div>
             <div className={styles.formFooterRight}>

@@ -1,5 +1,6 @@
 .formWrapper {
   padding: 3%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .formBody {
@@ -19,7 +20,7 @@
 
 .formFooter {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
