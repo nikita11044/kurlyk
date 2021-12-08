@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from "./Home.module.scss"
-import {Container, Divider, Grid, InputBase, ListItem, ListItemText, Paper, Typography} from "@mui/material";
+import {Container, Divider, Grid, InputBase, List, ListItem, ListItemText, Paper, Typography} from "@mui/material";
 import {styled} from "@mui/styles";
 import {Kurlyk} from "../../components/Kurlyk";
 import {SideBar} from "../../components/SideBar/SideBar";
 import {AddKurlykForm} from "../../components/AddKurlykForm/AddKurlykForm";
-import {List} from "@mui/icons-material";
+import {TagsBlock} from "../../components/TagsBlock";
 
 const KurlykPaper = styled(Paper)({
     height: '100%',
@@ -54,23 +54,7 @@ export const Home: React.FC = (): React.ReactElement => {
                 <Grid item sm={3} md={3}>
                     <div className={styles.rightSideWrapper}>
                         <InputBase className={styles.searchField} fullWidth placeholder='Поиск по kurlyk.ru'/>
-                        <Paper className={styles.rightSideListBlock}>
-                            <Paper className={styles.rightSideListHeader}>
-                                <b>Это надо знать</b>
-                            </Paper>
-                            <List>
-                                <ListItem className={styles.rightSideListHeader}>
-                                    <ListItemText
-                                        primary={'Москва'}
-                                        secondary={
-                                            <Typography component={'span'} variant={'body2'}>
-                                                Курлыков: 777
-                                            </Typography>
-                                        }/>
-                                </ListItem>
-                                <Divider component={'li'}/>
-                            </List>
-                        </Paper>
+                        <TagsBlock/>
                     </div>
                 </Grid>
             </Grid>

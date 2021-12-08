@@ -1,5 +1,5 @@
 import {Button, FormControl, FormGroup, TextField, Typography} from "@mui/material";
-import HeronIcon from "../../components/icons/HeronIcon";
+import HeronIcon from "../../assets/icons/HeronIcon";
 import EmojiPeopleRoundedIcon from '@mui/icons-material/EmojiPeopleRounded';
 import BedRoundedIcon from '@mui/icons-material/BedRounded';
 import EmojiFoodBeverageIcon from '@mui/icons-material/EmojiFoodBeverage';

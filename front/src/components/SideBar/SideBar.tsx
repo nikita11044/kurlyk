@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./SideBar.module.scss";
 import { Button, IconButton, Typography, useMediaQuery } from "@mui/material";
-import HeronIcon from "../icons/HeronIcon";
+import HeronIcon from "../../assets/icons/HeronIcon";
 import { theme } from "../../theme";
 import TagIcon from "@mui/icons-material/Tag";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
