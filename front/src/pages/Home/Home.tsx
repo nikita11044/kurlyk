@@ -1,11 +1,24 @@
 import React from 'react'
 import styles from "./Home.module.scss"
-import {Container, Divider, Grid, InputBase, List, ListItem, ListItemText, Paper, Typography} from "@mui/material";
+import {
+    Container,
+    Divider,
+    Grid,
+    InputBase,
+    List,
+    ListItem,
+    ListItemText,
+    Paper,
+    TextField,
+    Typography
+} from "@mui/material";
 import {styled} from "@mui/styles";
 import {Kurlyk} from "../../components/Kurlyk";
 import {SideBar} from "../../components/SideBar/SideBar";
 import {AddKurlykForm} from "../../components/AddKurlykForm/AddKurlykForm";
 import {TagsBlock} from "../../components/TagsBlock";
+import {ThemeType} from "../../types";
+import {SearchField} from "../../components/SearchField";
 
 const KurlykPaper = styled(Paper)({
     height: '100%',
@@ -53,7 +66,7 @@ export const Home: React.FC = (): React.ReactElement => {
                 </Grid>
                 <Grid item sm={3} md={3}>
                     <div className={styles.rightSideWrapper}>
-                        <InputBase className={styles.searchField} fullWidth placeholder='Поиск по kurlyk.ru'/>
+                        <SearchField fullWidth placeholder='Поиск по kurlyk.ru'/>
                         <TagsBlock/>
                     </div>
                 </Grid>
