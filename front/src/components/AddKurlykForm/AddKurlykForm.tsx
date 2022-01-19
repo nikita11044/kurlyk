@@ -8,7 +8,7 @@ export const AddKurlykForm: React.FC = (): React.ReactElement => {
 
     const [text, setText] = useState<string>('')
     const calculateTextPercentage = Math.round((text.length / 280) * 100)
-    const isMaxLength = text.length >= 280
+    const isMaxLength = text.length > 280
 
     const handleChangeTextValue = (e: React.FormEvent<HTMLTextAreaElement>): void => {
         if (e.currentTarget) {
@@ -45,6 +45,7 @@ export const AddKurlykForm: React.FC = (): React.ReactElement => {
                                 size={35}
                                 thickness={3.5}
                                 value={isMaxLength ? 100 : calculateTextPercentage}
+                                style={isMaxLength ? {color: 'red'} : {}}
                             />
                             <Box
                                 sx={{
@@ -61,12 +62,12 @@ export const AddKurlykForm: React.FC = (): React.ReactElement => {
                                 <Typography
                                     variant="caption"
                                     component="div"
-                                >{text.length}</Typography>
+                                >{isMaxLength ? (280 - text.length) : text.length}</Typography>
                             </Box>
                         </Box>
                     }
                 </div>
-                <Button variant="contained">
+                <Button variant="contained" disabled={isMaxLength}>
                     Курлыкнуть
                 </Button>
             </div>
