@@ -7,7 +7,7 @@ const TagsWrapper = styled('div')({
     borderRadius: 15,
     marginTop: 20,
     '& .MuiList-root': {
-        paddingTop: 0
+        padding: 0
     }
 })
 
@@ -40,6 +40,9 @@ const TagListItem = styled(ListItem)({
     '& a': {
         color: 'inherit',
         textDecoration: 'none'
+    },
+    '&:last-child': {
+        borderRadius: '0 0 15% 15%'
     }
 })
 
