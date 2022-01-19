@@ -3,7 +3,7 @@ import styles from "./Home.module.scss"
 import {
     Container,
     Divider,
-    Grid,
+    Grid, InputAdornment,
     InputBase,
     List,
     ListItem,
@@ -19,6 +19,7 @@ import {AddKurlykForm} from "../../components/AddKurlykForm/AddKurlykForm";
 import {TagsBlock} from "../../components/TagsBlock";
 import {ThemeType} from "../../types";
 import {SearchField} from "../../components/SearchField";
+import SearchIcon from '@mui/icons-material/Search';
 
 const KurlykPaper = styled(Paper)({
     height: '100%',
@@ -66,7 +67,14 @@ export const Home: React.FC = (): React.ReactElement => {
                 </Grid>
                 <Grid item sm={3} md={3}>
                     <div className={styles.rightSideWrapper}>
-                        <SearchField fullWidth placeholder='Поиск по kurlyk.ru'/>
+                        <SearchField
+                            fullWidth
+                            placeholder='Поиск по kurlyk.ru'
+                            startAdornment={
+                                <InputAdornment position='start'>
+                                    <SearchIcon/>
+                                </InputAdornment>
+                            }/>
                         <TagsBlock/>
                     </div>
                 </Grid>
