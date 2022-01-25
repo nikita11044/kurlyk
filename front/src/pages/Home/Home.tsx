@@ -67,14 +67,15 @@ export const Home: React.FC = (): React.ReactElement => {
                 </Grid>
                 <Grid item sm={3} md={3}>
                     <div className={styles.rightSideWrapper}>
-                        <SearchField
-                            fullWidth
-                            placeholder='Поиск по kurlyk.ru'
-                            startAdornment={
-                                <InputAdornment position='start'>
-                                    <SearchIcon/>
-                                </InputAdornment>
-                            }/>
+                        {/*<SearchField*/}
+                        {/*    fullWidth*/}
+                        {/*    placeholder='Поиск по kurlyk.ru'*/}
+                        {/*    startAdornment={*/}
+                        {/*        <InputAdornment position='start'>*/}
+                        {/*            <SearchIcon/>*/}
+                        {/*        </InputAdornment>*/}
+                        {/*    }/>*/}
+                        <SearchField/>
                         <TagsBlock/>
                     </div>
                 </Grid>
