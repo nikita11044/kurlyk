@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import ImageOutlinedIcon from '@mui/icons-material/ImageOutlined';
 import EmojiEmotionsOutlinedIcon from '@mui/icons-material/EmojiEmotionsOutlined';
-import {Avatar, Box, Button, CircularProgress, IconButton, Paper, TextareaAutosize, Typography} from "@mui/material";
+import {Avatar, Box, Button, CircularProgress, IconButton, TextareaAutosize, Typography} from "@mui/material";
 import styles from './AddKurlykForm.module.scss'
 
 export const AddKurlykForm: React.FC = (): React.ReactElement => {

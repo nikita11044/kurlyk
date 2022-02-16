@@ -1,23 +1,11 @@
 import React from 'react'
 import styles from "./Home.module.scss"
-import {
-    Container,
-    Divider,
-    Grid, InputAdornment,
-    InputBase,
-    List,
-    ListItem,
-    ListItemText,
-    Paper,
-    TextField,
-    Typography
-} from "@mui/material";
+import {Container, Grid, InputAdornment, Paper, Typography} from "@mui/material";
 import {styled} from "@mui/styles";
 import {Kurlyk} from "../../components/Kurlyk";
 import {SideBar} from "../../components/SideBar/SideBar";
 import {AddKurlykForm} from "../../components/AddKurlykForm/AddKurlykForm";
 import {TagsBlock} from "../../components/TagsBlock";
-import {ThemeType} from "../../types";
 import {SearchField} from "../../components/SearchField";
 import SearchIcon from '@mui/icons-material/Search';
 
@@ -65,15 +53,14 @@ export const Home: React.FC = (): React.ReactElement => {
                 </Grid>
                 <Grid item sm={3} md={3}>
                     <div className={styles.rightSideWrapper}>
-                        {/*<SearchField*/}
-                        {/*    fullWidth*/}
-                        {/*    placeholder='Поиск по kurlyk.ru'*/}
-                        {/*    startAdornment={*/}
-                        {/*        <InputAdornment position='start'>*/}
-                        {/*            <SearchIcon/>*/}
-                        {/*        </InputAdornment>*/}
-                        {/*    }/>*/}
-                        <SearchField/>
+                        <SearchField
+                            fullWidth
+                            placeholder='Поиск по kurlyk.ru'
+                            startAdornment={
+                                <InputAdornment position='start'>
+                                    <SearchIcon/>
+                                </InputAdornment>
+                            }/>
                         <TagsBlock/>
                     </div>
                 </Grid>
