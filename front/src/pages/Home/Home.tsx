@@ -32,11 +32,12 @@ export const Home: React.FC = (): React.ReactElement => {
                 <Grid item sm={8} md={6}>
                     <KurlykPaper square variant='outlined'>
                         <Paper square variant='outlined'>
-                            <Typography variant='h6'>
+                            <Typography variant='h6' style={{marginLeft: 15}}>
                                 Главная
                             </Typography>
                         </Paper>
                         <AddKurlykForm/>
+                        <div className={styles.addKurlykFormBottomSeparator}></div>
                         {[
                             ...new Array(20).fill(
                                 <Kurlyk

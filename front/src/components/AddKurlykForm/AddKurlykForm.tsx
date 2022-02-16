@@ -4,7 +4,12 @@ import EmojiEmotionsOutlinedIcon from '@mui/icons-material/EmojiEmotionsOutlined
 import {Avatar, Box, Button, CircularProgress, IconButton, TextareaAutosize, Typography} from "@mui/material";
 import styles from './AddKurlykForm.module.scss'
 
-export const AddKurlykForm: React.FC = (): React.ReactElement => {
+type AddKurlykFormPropsType = {
+    maxRows?: number
+}
+
+
+export const AddKurlykForm: React.FC<AddKurlykFormPropsType> = ({maxRows}): React.ReactElement => {
 
     const [text, setText] = useState<string>('')
     const calculateTextPercentage = Math.round((text.length / 280) * 100)
@@ -24,6 +29,7 @@ export const AddKurlykForm: React.FC = (): React.ReactElement => {
                 placeholder="Что происходит, братишка?"
                 value={text}
                 onChange={handleChangeTextValue}
+                maxRows={maxRows}
             />
         </div>
         <div className={styles.formFooter}>

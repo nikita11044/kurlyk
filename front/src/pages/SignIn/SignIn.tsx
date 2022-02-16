@@ -5,7 +5,7 @@ import BedRoundedIcon from '@mui/icons-material/BedRounded';
 import EmojiFoodBeverageIcon from '@mui/icons-material/EmojiFoodBeverage';
 import React, {useState} from "react";
 import styles from "./SignIn.module.scss"
-import {ModalBlock} from "../../components/ModalBlock";
+import {Modal} from "../../components/Modal";
 import {theme} from "../../theme";
 
 export const SignIn: React.FC = (): React.ReactElement => {
@@ -67,9 +67,9 @@ export const SignIn: React.FC = (): React.ReactElement => {
                         >
                             Войти
                         </Button>
-                        <ModalBlock
+                        <Modal
                             title='Вход в kurlyk.ru'
-                            visible={modalVisible === 'signIn'}
+                            open={modalVisible === 'signIn'}
                             onClose={handleModalClose}
                         >
                             <FormControl component="fieldset" fullWidth>
@@ -109,10 +109,10 @@ export const SignIn: React.FC = (): React.ReactElement => {
                                     </Button>
                                 </FormGroup>
                             </FormControl>
-                        </ModalBlock>
-                        <ModalBlock
+                        </Modal>
+                        <Modal
                             title='Регистрируйся, братишка!'
-                            visible={modalVisible === 'signUp'}
+                            open={modalVisible === 'signUp'}
                             onClose={handleModalClose}
                         >
                             <FormControl component="fieldset" fullWidth>
@@ -165,7 +165,7 @@ export const SignIn: React.FC = (): React.ReactElement => {
                                     </Button>
                                 </FormGroup>
                             </FormControl>
-                        </ModalBlock>
+                        </Modal>
                     </div>
                 </div>
             </section>

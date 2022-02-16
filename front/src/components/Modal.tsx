@@ -2,18 +2,22 @@ import React from "react";
 import {Dialog, DialogContent, DialogTitle, IconButton} from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
-type ModalBlockProps = {
+type ModalProps = {
     title: string
-    visible: boolean
+    open: boolean
     onClose: () => void
     children: React.ReactNode
 }
 
-export const ModalBlock: React.FC<ModalBlockProps> = ({title, visible= false, onClose, children}): React.ReactElement | null => {
+export const Modal: React.FC<ModalProps> = ({title, open= false, onClose, children}): React.ReactElement | null => {
 
-    if (!visible) return null
+    if (!open) return null
 
-    return <Dialog open={visible}>
+    return <Dialog
+            open={open}
+            onClose={onClose}
+            aria-labelledby="form-dialog-title"
+            maxWidth="md">
         <DialogTitle id="form-dialog-title">
             <IconButton
                 color="primary"

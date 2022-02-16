@@ -78,7 +78,6 @@ const components = {
       h6: {
         fontWeight: 700,
         fontSize: 20,
-        marginLeft: 15,
       }
     }
   },
@@ -116,7 +115,6 @@ const components = {
     styleOverrides: {
       root: {
         borderBottom: '1px solid rgb(204, 214, 221)',
-        marginBottom: 10,
         padding: '10px 15px',
         display: 'flex',
         alignItems: 'center',
